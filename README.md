@@ -3,5 +3,5 @@ Using Django+Python+SQL Designed a web app to store a users current position wit
 
 App contains previos apps also but the app being disscussed here is the "searcher" app.
 
-It is good for the practice of implementin MTV feature of Django, forms features and some basic SQL queries so that anyone can get familiar with it.  
+It is good for the practice of implementing MTV feature of Django, forms features and some basic SQL queries so that anyone can get familiar with it.  
 
