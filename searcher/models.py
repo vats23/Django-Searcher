@@ -1,12 +1,16 @@
 from django.db import models
-from django.contrib.auth.models import User
 # Create your models here.
 
-class UserProfile(models.Model):
-    user = models.OneToOneField(User,on_delete=models.CASCADE,)
+class Person(models.Model):
+    name = models.CharField(max_length=100)
     location = models.CharField(max_length=100)
+    email = models.EmailField()
     date = models.DateTimeField(auto_now_add=True)
-    portfolio = models.URLField(blank=True)
 
     def __str__(self):
-        return self.location
+        return self.name
+
+    def save(self, *args, **kwargs):
+        self.name = self.name.lower()
+        self.location = self.location.lower()
+        return super(Person, self).save(*args, **kwargs)

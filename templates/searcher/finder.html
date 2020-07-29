@@ -1,0 +1,29 @@
+{% extends "basic.html" %}
+
+{% block body_block %}
+    <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="Find">
+        {% if submitted %}
+          {% if ans is None %}
+            <p>No one found</p>
+          {% else %}
+            <table>
+              <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>DATE</th>
+              </tr>
+              {% for x in ans %}
+                <tr>
+                  <td>{{x.name}}</td>
+                  <td>{{x.email}}</td>
+                  <td>{{x.date}}</td>
+                </tr>
+              {% endfor %}
+            </table>
+          {%endif%}
+        {% endif %}
+    </form>
+{% endblock %}

@@ -22,7 +22,15 @@
               <li><a href="{% url "converter:indexdeci" %}">Decimal to binary</a></li>
             </ul>
           </li>
-          <li><a href="{% url "wallet:about" %}">Searcher</a></li>
+          <li><a href="{% url "wallet:about" %}">Wallet</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="">Searcher</a>
+            <ul class="dropdown-menu">
+              <li><a href="{% url "searcher:home" %}">About</a></li>
+              <li><a href="{% url "searcher:finder" %}">Finder</a></li>
+              <li><a href="{% url "searcher:register" %}">Register</a></li>
+            </ul>
+          </li>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

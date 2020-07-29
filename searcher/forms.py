@@ -1,15 +1,10 @@
 from django import forms
 from . import models
 
-class UserForm(forms.ModelForm):
+class register(forms.ModelForm):
     class Meta:
-        model = models.User
-        fields = ('username','first_name','last_name','email','password',)
+        model = models.Person
+        fields = ("name","location","email")
 
-class UserProfileForm(forms.ModelForm):
-    class Meta:
-        model = models.UserProfile
-        fields = "__all__"
-
-class adder(forms.Form):
-    value=forms.PositiveIntegerField()
+class finder(forms.Form):
+    by_location = forms.CharField(max_length=100)

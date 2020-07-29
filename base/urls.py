@@ -24,6 +24,6 @@ urlpatterns = [
     path('wallet/',include('wallet.urls')),
     path('calculator/',include('calculator.urls')),
     path('converter/',include('converter.urls')),
-    # path('search/',include('searcher.urls')),
+    path('search/',include('searcher.urls')),
     path('admin/', admin.site.urls),
 ]

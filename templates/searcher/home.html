@@ -1,0 +1,7 @@
+{% extends "basic.html" %}
+
+{% block body_block %}
+  <h1>You can use this feature to find someone you wish to find by location or by name</h1>
+  <h3>You can Register Here <a href="{% url 'searcher:register' %}">Register</a></h3>
+  <h3>You can Register Here <a href="{% url 'searcher:finder' %}">Finder</a></h3>
+{% endblock %}
