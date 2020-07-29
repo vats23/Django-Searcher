@@ -3,11 +3,11 @@ Using Django+Python+SQL Designed a web app to store a users current position wit
 
 App contains previos apps also but the app being disscussed here is the "searcher" app.
 
-It is good for the practice of implementing MTV feature of Django, forms features and some basic SQL queries so that anyone can get familiar with it.  
+It is good for the practice of implementing MTV feature of Django, Forms features and some basic SQL queries so that anyone can get familiar with it.  
 
 
-BASE - Project
-Calculator - App of a calculator(add,subtract,multiply,divide,modulo)
-Converter - App to Convert Binary-Decimal Or Decimal-Binary
-Wallet - App Login-Logout feature of django
-Searcher - App to search people from a certain location from a Model of registered(stored) location and show their details after.
+1) BASE - Project
+2) Calculator - App of a calculator(add,subtract,multiply,divide,modulo)
+3) Converter - App to Convert Binary-Decimal Or Decimal-Binary
+4) Wallet - App Login-Logout feature of django
+5) Searcher - App to search people from a certain location from a Model of registered(stored) location and show their details after.
